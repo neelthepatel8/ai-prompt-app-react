@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Welcome to Promptyy. 
+This is an app built by Neel Patel as a way to learn and understand new web development technologies. 
 
-## Getting Started
+### Tech Stack:
+#### JavaScript
+I generally use Typescript for my web dev projects but since a lot of new updates came out in Next JS 13 I wanted to not worry about strict typing for this project, therefore I ended up using Javascript. Future plans to help with understand Typescript more is to change all the javascript code to typescript.
 
-First, run the development server:
+#### NextJS 13
+I really wanted to learn the latest industry level framework for building this app. NextJS 13 came out about 2 weeks ago from the time I started building this app. It made me learn new ways to work with the Next api routes, Server / Client side rendering changes and the new App directory structure. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+#### ReactJS
+React JS has become the ideal choice for beginner - intermediate web framework choice. I would really like to learn more advanced frameworks like Angular in the future.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### MongoDB
+This was my first time working with MongoDB and NoSQL Database in general. I have worked previously with MySQL and Postgresql. MongoDB is definitely a lot easier to work with and mongoose makes it very smooth to use it with the project. 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Running the app
+#### Locally
+To run the application locally follow the steps below:
+1. Download the repository as zip
+2. Unzip into a folder and open a terminal instance to that directory.
+3. Run npx run dev. (Make sure you have node package manager installed on your system)
+4. In your browser open ```localhost:3000```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Deployed Version
+This app has also been deployed via vercel. To visit, just open ```https://promptyy.vercel.app``` in your browser or click (Here)[https://promptyy.vercel.app].
