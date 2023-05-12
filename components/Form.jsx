@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 
 const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
   return (
@@ -9,50 +8,56 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
       </h1>
       <p className="desc text-left max-w-md">
         {type} and share amazing prompts with the world, and let your
-        imagination run wild with any AI-Powered platform.
+        imagination run wild with any AI-powered platform
       </p>
-      <form className="mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism">
+
+      <form
+        onSubmit={handleSubmit}
+        className="mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism"
+      >
         <label>
-          <span className="font-satoshi font-semibold text-vase text-gray-700">
+          <span className="font-satoshi font-semibold text-base text-gray-700">
             Your AI Prompt
           </span>
+
           <textarea
             value={post.prompt}
             onChange={(e) => setPost({ ...post, prompt: e.target.value })}
-            placeholder="Write your prompt here..."
+            placeholder="Write your post here"
             required
-            className="form_textarea"
+            className="form_textarea "
           />
         </label>
+
         <label>
-          <span className="font-satoshi font-semibold text-vase text-gray-700">
-            Tag {` `}
+          <span className="font-satoshi font-semibold text-base text-gray-700">
+            Field of Prompt{" "}
             <span className="font-normal">
-              (#product, #webdevelopment, #idea)
+              (#product, #webdevelopment, #idea, etc.)
             </span>
           </span>
-          <textarea
+          <input
             value={post.tag}
             onChange={(e) => setPost({ ...post, tag: e.target.value })}
-            placeholder="#tag"
+            type="text"
+            placeholder="#Tag"
             required
-            className="form_textarea"
+            className="form_input"
           />
         </label>
-        <div className="">
-          <Link
-            href="/"
-            className="flex-end mx-3 mb-5 gap-4 text-gray-500 text-sm"
-          >
+
+        <div className="flex-end mx-3 mb-5 gap-4">
+          <Link href="/" className="text-gray-500 text-sm">
             Cancel
-            <button
-              type="submit"
-              disabled={submitting}
-              className="px-5 py-1 text-sm bg-primary-orange rounded-full text-white"
-            >
-              {submitting ? `${type}...` : type}
-            </button>
           </Link>
+
+          <button
+            type="submit"
+            disabled={submitting}
+            className="px-5 py-1.5 text-sm bg-primary-orange rounded-full text-white"
+          >
+            {submitting ? `${type}ing...` : type}
+          </button>
         </div>
       </form>
     </section>
