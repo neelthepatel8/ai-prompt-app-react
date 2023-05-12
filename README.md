@@ -24,4 +24,4 @@ To run the application locally follow the steps below:
 4. In your browser open ```localhost:3000```
 
 #### Deployed Version
-This app has also been deployed via vercel. To visit, just open ```https://promptyy.vercel.app``` in your browser or click (Here)[https://promptyy.vercel.app].
+This app has also been deployed via vercel. To visit, just open ```https://promptyy.vercel.app``` in your browser or click [Here](https://promptyy.vercel.app).
